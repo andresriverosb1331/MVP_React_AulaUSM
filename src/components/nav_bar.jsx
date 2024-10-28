@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export const NavBar = () => {
   const navLinkClass = ({ isActive }) => {
-    const classes = ['nav-bar__link']
-    if (isActive) classes.push('nav-bar__link--active')
+    const classes = ['nav-link-container']
+    if (isActive) classes.push('nav-link-container--active')
     return classes.join(' ')
   }
   return (
@@ -13,7 +13,7 @@ export const NavBar = () => {
         className={navLinkClass}
         to='/'
       >
-        Inicio
+        Página Principal
       </NavLink>
       <NavLink
         className={navLinkClass}

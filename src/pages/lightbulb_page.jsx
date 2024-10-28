@@ -16,6 +16,7 @@ export const LightbulbPage = () => {
         {isOn ? 'Apagar' : 'Encender'}
       </button>
     </div>
+    
   )
 }
 
