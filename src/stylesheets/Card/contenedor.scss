@@ -1,5 +1,5 @@
 .contenedor-ramos{
-    background-color: rgb(228, 228, 222);
+    background-color: F8F9FA;
     display:flex;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -12,4 +12,35 @@
     width: 95%;
     
 
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd; 
+  font-size: 25px;
+  font-family: Roboto;
+  gap:8px;
+  .nav-link {
+    font-size: 20px;
+    color: #007bff; 
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent; 
+    border-radius: 4px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #0056b3; 
+    }
+
+    &.active {
+      color: #495057; 
+      background-color: #fff;
+      border-color: #ddd #ddd #fff; 
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+    }
+  }
 }
