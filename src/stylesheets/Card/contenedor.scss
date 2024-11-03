@@ -16,16 +16,18 @@
 
 .nav-tabs {
   border-bottom: 1px solid #ddd; 
-  font-size: 25px;
+  font-size: 20px;
   font-family: Roboto;
   gap:8px;
+  align-items: center;
   .nav-link {
-    font-size: 20px;
-    color: #007bff; 
+    font-size: 15px;
+    color: #000000; 
     padding: 0.5rem 1rem;
     border: 1px solid transparent; 
     border-radius: 4px;
     transition: all 0.3s;
+    background-color: #dbd5d5;
 
     &:hover {
       color: #0056b3; 

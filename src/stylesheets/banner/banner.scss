@@ -1,0 +1,44 @@
+.banner-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%; // Adjust the overall banner size here
+    height: 200px; // Smaller height for the banner
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  
+    .banner-image {
+      flex: 1;
+      text-align: center;
+  
+      img {
+        width: 100%; // Makes the image take up 100% of the banner width
+        height: 100%; // Makes the image take up 100% of the banner height
+        object-fit: cover; // Ensures the image fits inside the banner without stretching
+      }
+    }
+  
+    .carousel-button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 14px; // Smaller font size for the buttons
+      cursor: pointer;
+      padding: 0.2rem 0.5rem; // Smaller padding for a compact button
+      border-radius: 50%;
+      margin: 0 3px; // Smaller margin to fit within the narrower width
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
