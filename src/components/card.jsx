@@ -18,30 +18,91 @@ const Card = () => {
                 </NavLink>
             </div>
         </nav>
-        
+        <div className='contenedor-ramos-interno'>
         <div className='Card1'>
+          <div className='info-ramo'>
+            <div className='rectangle1'> 
+              <div className='rectangle2'>
+                <div className='carrera'>Informática</div>
+              </div>
+              Diseño de interfaces usuarias | Paralelos: 200/201/202 (2024-02)(INF322)
+            </div>
+            <div className='ramo'>
+              - Entrega 1 proyecto | 07/09/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 2 proyecto | 05/11/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 3 proyecto | 27/11/2024
+            </div>
+
+            </div>
+
+          </div>
+          
+          <div className='Card1'>
           <div className='info-ramo'>
             <div className='rectangle1'>
               <div className='rectangle2'>
                 <div className='carrera'>Informática</div>
               </div>
+              Computación Científica | Paralelos: 200/201/202 (2024-02)(INF285)
             </div>
             <div className='ramo'>
-              Diseño de interfaces usuarias | Paralelos: 200/201/202 (2024-02)(INF322)
+              - Entrega 1 proyecto | 07/09/2024
             </div>
+            <div className='ramo'>
+              - Entrega 2 proyecto | 05/11/2024
             </div>
-          <div className='alertas-ramo'> Alertas
-            <div className='descripcion-alerta'>
-              Entrega 1 proyecto | 07/09/2024
+            <div className='ramo'>
+              - Entrega 3 proyecto | 27/11/2024
             </div>
-            <div className='descripcion-alerta'>
-              Entrega 2 proyecto | 05/11/2024
-            </div>
-            <div className='descripcion-alerta'>
-              Entrega 3 proyecto | 27/11/2024
             </div>
           </div>
+
+          <div className='Card1'>
+          <div className='info-ramo'>
+            <div className='rectanglefis1'>
+              <div className='rectanglefis2'>
+                <div className='carrera'>Física</div>
+              </div>
+              Física 140 | Paralelos: 200/201/202 (2024-02)(FIS140)
+            </div>
+            <div className='ramo'>
+              - Entrega 1 proyecto | 07/09/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 2 proyecto | 05/11/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 3 proyecto | 27/11/2024
+            </div>
+            </div>
           </div>
+
+          <div className='Card1'>
+          <div className='info-ramo'>
+            <div className='rectangle1'>
+              <div className='rectangle2'>
+                <div className='carrera'>Informática</div>
+              </div>
+              Lenguajes en programación en WWW | Paralelos: 200 (2024-02)(INF301)
+            </div>
+            <div className='ramo'>
+              - Entrega 1 proyecto | 07/09/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 2 proyecto | 05/11/2024
+            </div>
+            <div className='ramo'>
+              - Entrega 3 proyecto | 27/11/2024
+            </div>
+            
+            </div>
+          </div>
+
+        </div>
 
 
       </div>

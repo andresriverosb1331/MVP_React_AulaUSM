@@ -19,7 +19,7 @@ export const NavBar = () => {
         className={navLinkClass}
         to='/lightbulb'
       >
-        Ampolleta
+        MKMASDLKMASLKD
       </NavLink>
     </nav>
   )

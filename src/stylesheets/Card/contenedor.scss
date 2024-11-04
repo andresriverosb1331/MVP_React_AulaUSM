@@ -13,6 +13,13 @@
     
 
 }
+.contenedor-ramos-interno{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+  
+}
 
 .nav-tabs {
   border-bottom: 1px solid #ddd; 
