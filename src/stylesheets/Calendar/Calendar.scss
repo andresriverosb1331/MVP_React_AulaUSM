@@ -62,3 +62,36 @@
 .text-gray-900 {
     color: #111827;
 }
+
+.bg-green-500 {
+    background-color: #22c55e; 
+}
+
+.text-xxs {
+    font-size: 0.625rem; // 10px
+    line-height: 0.875rem; // 14px
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    h2 {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
+.month-nav-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    &:hover {
+        color: #4A5568; // Cambia esto según el color que desees
+    }
+}
