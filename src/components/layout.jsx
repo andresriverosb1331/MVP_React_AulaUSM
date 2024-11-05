@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 //Importar clases de las páginas
 import HomePage from '../pages/home_page';
-import LightbulbPage from '../pages/lightbulb_page';
+import CalendarPage from '../pages/calendar_page';
 import logo_USM from '../assets/USM_logo.png';
 import Noticias_avisos from '../pages/Noticias';
 
@@ -19,8 +19,8 @@ const Layout = () => {
           <NavLink to="/" className={navLinkClass}>
             Página Principal
           </NavLink>
-          <NavLink to="/area-personal" className={navLinkClass}>
-            Área personal
+          <NavLink to="/calendario" className={navLinkClass}>
+            Calendario
           </NavLink>
           <NavLink to="/noticias" className={navLinkClass}>
             Noticias y avisos
@@ -30,7 +30,7 @@ const Layout = () => {
       <main className='layout__page'>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/area-personal' element={<LightbulbPage />} />
+          <Route path='/calendario' element={<CalendarPage />} />
           <Route path='/noticias' element={<Noticias_avisos />} />
         </Routes>
       </main>
