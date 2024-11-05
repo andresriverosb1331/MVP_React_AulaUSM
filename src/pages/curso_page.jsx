@@ -2,7 +2,8 @@ import React from 'react'
 import Curso from '../components/curso'
 import Banner from '../components/banner'
 
-export const cursopage = () => {
+
+export const CursoPage = () => {
   return (
     <>
       <div>
@@ -16,4 +17,4 @@ export const cursopage = () => {
   )
 }
 
-export default cursopage
+export default CursoPage

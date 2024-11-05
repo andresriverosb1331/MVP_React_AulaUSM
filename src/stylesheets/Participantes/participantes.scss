@@ -1,0 +1,28 @@
+.participantes-page {
+  padding: 2rem;
+
+  .buscador {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &__input, &__select {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+  }
+
+  .participantes-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .participante {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+}

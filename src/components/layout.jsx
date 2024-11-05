@@ -5,6 +5,13 @@ import HomePage from '../pages/home_page';
 import CalendarPage from '../pages/calendar_page';
 import logo_USM from '../assets/USM_logo.png';
 import Noticias_avisos from '../pages/Noticias';
+import CursoPage from '../pages/curso_page';
+import PartcipantPage from '../pages/participantes_page';
+import CalificacionesPage from '../pages/calificaciones_page';
+import MaterialPage from '../pages/material_page';
+import TareasPage from '../pages/tarea_page';
+import ProyectoPage from '../pages/proyecto_page';
+import CertamenPage from '../pages/certamen_page';
 
 const Layout = () => {
   const navLinkClass = ({ isActive }) => (isActive ? 'nav-link nav-link--active' : 'nav-link');
@@ -32,6 +39,13 @@ const Layout = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='/calendario' element={<CalendarPage />} />
           <Route path='/noticias' element={<Noticias_avisos />} />
+          <Route path="/curso_page" element={<CursoPage />} />
+          <Route path="/participantes_page" element={<PartcipantPage />} />
+          <Route path="/calificaciones_page" element={<CalificacionesPage />} />
+          <Route path="/material_page" element={<MaterialPage />} />
+          <Route path="/tarea_page" element={<TareasPage />} />
+          <Route path="/proyecto_page" element={<ProyectoPage />} />
+          <Route path="/certamen_page" element={<CertamenPage />} />
         </Routes>
       </main>
     </BrowserRouter>

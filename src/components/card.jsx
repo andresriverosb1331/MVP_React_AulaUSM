@@ -25,7 +25,9 @@ const Card = () => {
               <div className='rectangle2'>
                 <div className='carrera'>Informática</div>
               </div>
+              <NavLink to="/curso_page" className="ramo__link">
               Diseño de interfaces usuarias | Paralelos: 200/201/202 (2024-02)(INF322)
+              </NavLink>
             </div>
             <div className='ramo'>
               - Entrega 1 proyecto | 07/09/2024
