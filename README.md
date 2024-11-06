@@ -15,6 +15,7 @@ Install dependences
 
 ```
 npm install
+npm install clsx
 ```
 
 Launch environment

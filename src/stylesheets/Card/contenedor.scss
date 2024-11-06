@@ -8,9 +8,9 @@
     border-radius: 25px;
     flex-direction: column;
     gap: 16px;
-    height: auto;
-    width: 95%;
     
+    width: 95%;
+    height: 500px;
 
 }
 .contenedor-ramos-interno{
@@ -53,3 +53,14 @@
     }
   }
 }
+.courses-container {
+  width: 100%;
+  padding: 1rem;
+  font-family: Roboto, sans-serif;
+}
+.course-info{
+  text-align: center;
+}
+
+
+
