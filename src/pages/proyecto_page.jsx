@@ -7,9 +7,6 @@ import DocumentManager from '../components/PDF_manager'
 export const CursoPage = () => {
   return (
     <>
-      <div>
-        <Banner/>
-      </div>
 
       <div>
         <Curso/>

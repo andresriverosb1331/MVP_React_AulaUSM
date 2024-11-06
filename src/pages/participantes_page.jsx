@@ -98,9 +98,6 @@ export const PartcipantPage = () => {
 
   return (
     <>
-      <div>
-        <Banner/>
-      </div>
 
       <div>
         <SubHeader/>

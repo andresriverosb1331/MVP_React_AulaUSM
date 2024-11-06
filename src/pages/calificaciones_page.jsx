@@ -7,9 +7,7 @@ import SubHeader from '../components/SubHeader'
 export const CalificacionesPage = () => {
   return (
     <>
-      <div>
-        <Banner/>
-      </div>
+
       <div>
         <SubHeader/>
       </div>
