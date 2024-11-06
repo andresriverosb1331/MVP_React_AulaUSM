@@ -39,11 +39,11 @@ const Layout = () => {
           <Route path='/' element={<HomePage />} />
           <Route path='/calendario' element={<CalendarPage />} />
           <Route path='/noticias' element={<Noticias_avisos />} />
-          <Route path="/curso_page" element={<CursoPage />} />
-          <Route path="/participantes_page" element={<PartcipantPage />} />
-          <Route path="/calificaciones_page" element={<CalificacionesPage />} />
-          <Route path="/material_page" element={<MaterialPage />} />
-          <Route path="/tarea_page" element={<TareasPage />} />
+          <Route path="/curso_page/:param" element={<CursoPage />} />
+          <Route path="/participantes_page/:param" element={<PartcipantPage />} />
+          <Route path="/calificaciones_page/:param" element={<CalificacionesPage />} />
+          <Route path="/material_page/:param" element={<MaterialPage />} />
+          <Route path="/tarea_page/" element={<TareasPage />} />
           <Route path="/proyecto_page" element={<ProyectoPage />} />
           <Route path="/certamen_page" element={<CertamenPage />} />
         </Routes>

@@ -25,7 +25,7 @@ const Card = () => {
               <div className='rectangle2'>
                 <div className='carrera'>Informática</div>
               </div>
-              <NavLink to="/curso_page" className="ramo__link">
+              <NavLink to="/curso_page/1" className="ramo__link">
               Diseño de interfaces usuarias | Paralelos: 200/201/202 (2024-02)(INF322)
               </NavLink>
             </div>
@@ -49,7 +49,9 @@ const Card = () => {
               <div className='rectangle2'>
                 <div className='carrera'>Informática</div>
               </div>
+              <NavLink to="/curso_page/2" className="ramo__link">
               Computación Científica | Paralelos: 200/201/202 (2024-02)(INF285)
+              </NavLink>
             </div>
             <div className='ramo'>
               - Entrega 1 proyecto | 07/09/2024
@@ -69,7 +71,9 @@ const Card = () => {
               <div className='rectanglefis2'>
                 <div className='carrera'>Física</div>
               </div>
+              <NavLink to="/curso_page/3" className="ramo__link">
               Física 140 | Paralelos: 200/201/202 (2024-02)(FIS140)
+              </NavLink>
             </div>
             <div className='ramo'>
               - Entrega 1 proyecto | 07/09/2024
@@ -89,7 +93,9 @@ const Card = () => {
               <div className='rectangle2'>
                 <div className='carrera'>Informática</div>
               </div>
+              <NavLink to="/curso_page/4" className="ramo__link">
               Lenguajes en programación en WWW | Paralelos: 200 (2024-02)(INF301)
+              </NavLink>
             </div>
             <div className='ramo'>
               - Entrega 1 proyecto | 07/09/2024

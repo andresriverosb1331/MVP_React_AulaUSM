@@ -1,17 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const SubHeader = () => {
+const SubHeader = ({param}) => {
+  console.log(param)
   return (
     <div className="sub-header">
       <nav className="sub-header__nav">
-        <NavLink to="/curso_page" className="sub-header__link" activeClassName="active">
+        <NavLink to={`/curso_page/${param}`} className="sub-header__link" activeClassName="active">
           Curso
         </NavLink>
-        <NavLink to="/participantes_page" className="sub-header__link" activeClassName="active">
+        <NavLink to={`/participantes_page/${param}` }className="sub-header__link" activeClassName="active">
           Participantes
         </NavLink>
-        <NavLink to="/calificaciones_page" className="sub-header__link" activeClassName="active">
+        <NavLink to={`/calificaciones_page/${param}`} className="sub-header__link" activeClassName="active">
           Calificaciones
         </NavLink>
       </nav>

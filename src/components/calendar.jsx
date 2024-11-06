@@ -66,7 +66,7 @@ const Calendar = ({ events = [] }) => {
                             })}>
                                 {format(dia, "d")}
                                 {todaysEvents.map((event) => (
-                                    <div key={event.title} className="bg-green-500 rounded-md text-gray-900 text-xxs">
+                                    <div key={event.title} className="bg-green-500 rounded-md text-white text-xxs">
                                         {event.title}
                                     </div>
                                 ))}
