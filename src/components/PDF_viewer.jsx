@@ -1,33 +1,23 @@
 import React from 'react';
+import { FaFilePdf } from 'react-icons/fa';
 
-const DocumentViewer = () => {
+const PDFList = ({ documentName }) => {
+  const pdfFiles = [
+    { name: documentName, url: '/assets/placeholder.pdf' },
+    { name: documentName, url: '/assets/test.pdf' },
+  ];
+
   return (
-    <div className="document-viewer">
-      <h2>Recursos del Curso</h2>
-      <ul>
-        <li>
-          <a
-            href="../assets/test.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="document-link"
-          >
-            Ver PDF: test.pdf ARCHIVO DE PRUEBA
+    <ul>
+      {pdfFiles.map((file, index) => (
+        <li key={index}>
+          <a href={file.url} target="_blank" rel="noopener noreferrer">
+            {`${file.name} ${index + 1} `}
           </a>
         </li>
-        <li>
-          <a
-            href="../assets/placeholder.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="document-link"
-          >
-            Ver PDF: placeholder
-          </a>
-        </li>
-      </ul>
-    </div>
+      ))}
+    </ul>
   );
 };
 
-export default DocumentViewer;
+export default PDFList;

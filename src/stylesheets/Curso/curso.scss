@@ -1,67 +1,90 @@
 .course {
+  padding: 20px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  &__units {
+    background-color: #f5f5f5;
     padding: 20px;
+    border-radius: 8px;
+  }
+
+  &__unit-list {
+    display: flex;
+    flex-direction: row; // Cambiamos a "row" para hacer los elementos horizontales
+    gap: 15px;
+    //flex-wrap: wrap; // Permite que los elementos se ajusten en una nueva línea si no caben
+  }
+}
+
+.unit {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 200px; // Ajusta el ancho según el diseño que quieras
+
+  &__title {
+    font-size: 20px;
+    color: #0073e6;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #666;
+  }
+}
+.unit {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  cursor: pointer; // Cambia el cursor a pointer para indicar interactividad
   
-    &__title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333;
-    }
-  
-    &__units {
-      background-color: #f5f5f5;
-      padding: 20px;
-      border-radius: 8px;
-    }
-  
-    &__unit-list {
-      display: flex;
-      flex-direction: row; // Cambiamos a "row" para hacer los elementos horizontales
-      gap: 15px;
-      //flex-wrap: wrap; // Permite que los elementos se ajusten en una nueva línea si no caben
-    }
+  &:hover {
+    background-color: #f0f8ff; // Color de fondo al pasar el mouse
   }
   
-  .unit {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 200px; // Ajusta el ancho según el diseño que quieras
-  
-    &__title {
-      font-size: 20px;
-      color: #0073e6;
-      margin-bottom: 5px;
-    }
-  
-    &__description {
-      font-size: 16px;
-      color: #666;
-    }
+  &__title {
+    font-size: 20px;
+    color: #0073e6;
+    margin-bottom: 5px;
   }
-  .unit {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.3s;
-    cursor: pointer; // Cambia el cursor a pointer para indicar interactividad
-    
-    &:hover {
-      background-color: #f0f8ff; // Color de fondo al pasar el mouse
-    }
-    
-    &__title {
-      font-size: 20px;
-      color: #0073e6;
-      margin-bottom: 5px;
-    }
-  
-    &__description {
-      font-size: 16px;
-      color: #666;
-    }
+
+  &__description {
+    font-size: 16px;
+    color: #666;
   }
+}
+/* styles.css */
+section {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1em;
+  color: #555;
+}
+
   
-    

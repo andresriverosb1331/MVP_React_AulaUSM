@@ -1,0 +1,26 @@
+.PDFList{
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    color: #E74C3C; /* Cambia de color al pasar el cursor */
+  }
+  
+  svg {
+    margin-right: 8px;
+    color: #E74C3C; /* Color del ícono */
+  }
+}

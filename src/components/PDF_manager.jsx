@@ -1,8 +1,10 @@
 import React from 'react';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
+import PDFList from './PDF_viewer';
 
-const DocumentViewer = () => {
+
+const DocumentManager = ({nombre, documento}) => {
   // Lista de URLs de los PDFs
   const pdfUrls = [
     { name: "test.pdf", url: "../assets/test.pdf" },
@@ -27,35 +29,18 @@ const DocumentViewer = () => {
 
   return (
     <div className="document-viewer">
+      
+
+      <h2>{nombre}</h2>
+
+      <div>
+        <PDFList documentName={documento}/>
+      </div>
       <button onClick={downloadAllPdfs} className="download-all-button">
         Descargar todos los PDFs
       </button>
-
-      <h2>Recursos del Curso</h2>
-      <ul>
-        <li>
-          <a
-            href="../assets/test.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="document-link"
-          >
-            Ver archivo de prueba: test.pdf
-          </a>
-        </li>
-        <li>
-          <a
-            href="../assets/placeholder.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="document-link"
-          >
-            Ver PDF: placeholder para la visualizacion de documentos.
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };
 
-export default DocumentViewer;
+export default DocumentManager;
