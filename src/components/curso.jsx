@@ -2,12 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SubHeader from './SubHeader';
 
-
-const Curso = () => {
+const Curso = ({p}) => {
   return (
     <>
       <div>
-        <SubHeader />
+        <SubHeader param={p}/>
       </div>
       <div className="contenedor-contenido">
         <div className="course">

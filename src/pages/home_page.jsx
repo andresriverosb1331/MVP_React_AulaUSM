@@ -6,10 +6,6 @@ export const HomePage = () => {
   return (
     <>
       <div>
-        <Banner/>
-      </div>
-
-      <div>
         <Card/>
       </div>
     </>

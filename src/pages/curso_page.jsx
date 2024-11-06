@@ -1,6 +1,5 @@
 import React from 'react'
 import Curso from '../components/curso'
-import Banner from '../components/banner'
 import DocumentManager from '../components/PDF_manager'
 
 const RuleSection = ({ title, rules }) => {
@@ -22,17 +21,17 @@ const rules = [
   "Nota por Certamen ≥ 40.",
   "Asistencia Anual ≥ 80%.",
 ];
+import { useParams } from 'react-router-dom'
 
 
 export const CursoPage = () => {
+  const { param } = useParams()
+  console.log(param)
   return (
     <>
-      <div>
-        <Banner/>
-      </div>
 
       <div>
-        <Curso/>
+        <Curso p={param}/>
       </div>
       <RuleSection
       title="Reglas del Curso"

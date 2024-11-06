@@ -1,55 +1,66 @@
 .contenedor-ramos{
-    background-color: F8F9FA;
-    display:flex;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    border-radius: 25px;
-    flex-direction: column;
-    gap: 16px;
-    height: auto;
-    width: 95%;
-    
+  background-color: F8F9FA;
+  display:flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 25px;
+  flex-direction: column;
+  gap: 16px;
+  
+  width: 95%;
+  height: 500px;
 
 }
 .contenedor-ramos-interno{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5%;
-  
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 5%;
+
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #ddd; 
-  font-size: 20px;
-  font-family: Roboto;
-  gap:8px;
-  align-items: center;
-  .nav-link {
-    font-size: 15px;
-    color: #000000; 
-    padding: 0.5rem 1rem;
-    border: 1px solid transparent; 
-    border-radius: 4px;
-    transition: all 0.3s;
-    background-color: #dbd5d5;
+border-bottom: 1px solid #ddd; 
+font-size: 20px;
+font-family: Roboto;
+gap:8px;
+align-items: center;
+.nav-link {
+  font-size: 15px;
+  color: #000000; 
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent; 
+  border-radius: 4px;
+  transition: all 0.3s;
+  background-color: #dbd5d5;
 
-    &:hover {
-      color: #0056b3; 
-    }
+  &:hover {
+    color: #0056b3; 
+  }
 
-    &.active {
-      color: #495057; 
-      background-color: #fff;
-      border-color: #ddd #ddd #fff; 
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
-    }
+  &.active {
+    color: #495057; 
+    background-color: #fff;
+    border-color: #ddd #ddd #fff; 
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+  }
 
-    &:focus {
-      outline: none;
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
-    }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
   }
 }
+}
+.courses-container {
+width: 100%;
+padding: 1rem;
+font-family: Roboto, sans-serif;
+}
+.course-info{
+text-align: center;
+}
+
+
+

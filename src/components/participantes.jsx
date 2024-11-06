@@ -1,15 +1,7 @@
 // src/pages/ParticipantesPage.jsx
 import React, { useState } from 'react';
 
-const participantesData = [
-  { id: 1, nombre: 'Juan Pérez', clase: 'Estudiante' },
-  { id: 2, nombre: 'María González', clase: 'Estudiante' },
-  { id: 3, nombre: 'Laura Díaz', clase: 'Profesor/a' },
-  { id: 4, nombre: 'Carlos Ruiz', clase: 'Ayudante' },
-  // Agrega más participantes según sea necesario
-];
-
-const Participantes = () => {
+const Participantes = ({participantesData = []}) => {
   const [nombreFiltro, setNombreFiltro] = useState('');
   const [claseFiltro, setClaseFiltro] = useState('');
 
@@ -52,6 +44,7 @@ const Participantes = () => {
           <div key={participante.id} className="participante">
             <h3>{participante.nombre}</h3>
             <p>{participante.clase}</p>
+            <p>{participante.email}</p>
           </div>
         ))}
         {participantesFiltrados.length === 0 && <p>No se encontraron participantes.</p>}
