@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import img1 from '../assets/img11.png'
-import img2 from '../assets/light-off.png'
+import img2 from '../assets/OIP.jpeg'
 const BannerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
