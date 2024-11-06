@@ -12,7 +12,7 @@ const Curso = ({p}) => {
         <div className="course">
           <nav className="course__units">
             <div className="course__unit-list">
-              <NavLink to="/curso_page" className="unit">
+              <NavLink to={`/curso_page/${p}`} className="unit">
                 <h3 className="unit__title">Información General</h3>
                 <p className="unit__description">Información del Curso.</p>
               </NavLink>
