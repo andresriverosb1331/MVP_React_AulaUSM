@@ -18,13 +18,11 @@ const Calendar = ({ events = [] }) => {
 
     const daysInMonth = eachDayOfInterval({ start: firstDayMonth, end: lastDayMonth });
 
-    // Ajuste de startingDayIndex: Mapear el domingo (getDay() = 0) a 6, y el lunes (getDay() = 1) a 0
-    const startingDayIndex = getDay(firstDayMonth); // Valor de 0 (domingo) a 6 (sábado)
+    const startingDayIndex = getDay(firstDayMonth);
     const adjustedStartingDayIndex = (startingDayIndex + 6) % 7; // Ajustar para que 0 sea lunes y 6 domingo
 
-    // Calculando el número total de celdas para que la cuadrícula tenga 6 filas (7 días * 6 filas = 42 celdas)
     const totalCells = 42;
-    const emptyCellsAtStart = adjustedStartingDayIndex; // Celdas vacías al principio del mes
+    const emptyCellsAtStart = adjustedStartingDayIndex;
 
     const eventsByDate = useMemo(() => {
         return events.reduce((acc, event) => {
@@ -43,15 +41,17 @@ const Calendar = ({ events = [] }) => {
         setCurrentDate((prevDate) => addMonths(prevDate, 1));
     };
 
-    // Rellenar el calendario hasta 42 celdas
     const paddedDaysInMonth = [
-        ...Array(emptyCellsAtStart).fill(null),  // Celdas vacías al principio
+        ...Array(emptyCellsAtStart).fill(null),
         ...daysInMonth,
     ];
 
-    // Rellenar con celdas vacías al final si es necesario
     const emptyCellsAtEnd = totalCells - paddedDaysInMonth.length;
     const finalCalendarDays = [...paddedDaysInMonth, ...Array(emptyCellsAtEnd).fill(null)];
+
+    const handleEventClick = (event) => {
+        alert(`Evento: ${event.title}\nFecha: ${format(event.date, "dd MMMM yyyy", { locale })}`);
+    };
 
     return (
         <div className="container">
@@ -71,7 +71,6 @@ const Calendar = ({ events = [] }) => {
 
                     {finalCalendarDays.map((dia, index) => {
                         if (!dia) {
-                            // Celdas vacías
                             return <div key={index}></div>;
                         }
                         const dateKey = format(dia, "yyyy-MM-dd");
@@ -83,7 +82,11 @@ const Calendar = ({ events = [] }) => {
                             })}>
                                 {format(dia, "d")}
                                 {todaysEvents.map((event) => (
-                                    <div key={event.title} className="bg-green-500 rounded-md text-white text-xxs">
+                                    <div
+                                        key={event.title}
+                                        className="bg-green-500 rounded-md text-white text-xxs cursor-pointer"
+                                        onClick={() => handleEventClick(event)}
+                                    >
                                         {event.title}
                                     </div>
                                 ))}
