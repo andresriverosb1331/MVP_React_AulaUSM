@@ -1,12 +1,16 @@
 .Card1
 {
-margin-top: 1.5rem;
+
 background-color:#ffffff;
 min-height: 100px;
-max-height:214px;
+max-height:auto;
 display: flex;
-flex-direction: row;
-width: 47%;
+flex-wrap: wrap;
+gap: 1rem;
+
+
+
+
 
 filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
 border-radius:15px;
@@ -19,7 +23,24 @@ outline:none;
 }
 
 .info-ramo{
-    width: 100%;
+    align-items: center;
+    color: inherit;
+    flex: 1 1 calc(50% - 0.5rem); 
+    box-sizing: border-box; 
+    transition: box-shadow 0.3s;
+    padding: 1rem;
+    margin-left: 5px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+
+    .info-ramo-link{
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        &:hover {
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
+          }
+    }
     .rectangle1
     {
     
@@ -84,41 +105,31 @@ outline:none;
         border-radius:15px;
         
     }
-    .carrera
-    {
-    
-    color:#ffffff;
-    margin-left: 0.5rem;
-    text-align:left;
-    vertical-align:text-middle;
-    font-size:28.399999618530273px;
-    font-family:Roboto;
-    line-height:auto;
-    border-style:hidden;
-    outline:none;
-    left:5.83px;
-    top:0px;
-    position:absolute;
-    width:146px;
-    }
 
 }
-.alertas-ramo{
+
+
+
+.courses-list {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding-left: 20px;
-    margin: 2px;
-    align-items: left;
-    text-align: center;
-    align-content: left;
-    font-family: Roboto;
-    .descripcion-alerta{
-        font-family: Roboto;
-        font-size: 13px;
-        text-align: left;
-        color: rgb(117, 15, 15);
+    gap: 1rem; 
+  }
+  
+  .course-card {
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; 
+  }
+  .assignment-link {
+    color: red; 
+    text-decoration: none; 
+    transition: color 0.3s;
+  
+    &:hover {
+      color: #0056b3; /* Change color on hover */
+      text-decoration: underline; /* Optional underline on hover */
     }
-
-}
-
+  }

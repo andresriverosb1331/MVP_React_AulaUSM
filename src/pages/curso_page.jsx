@@ -9,9 +9,6 @@ export const CursoPage = () => {
   console.log(param)
   return (
     <>
-      <div>
-        <Banner/>
-      </div>
 
       <div>
         <Curso p={param}/>

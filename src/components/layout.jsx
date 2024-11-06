@@ -20,12 +20,11 @@ const Layout = () => {
     <BrowserRouter>
       <header className='layout__header'>
         <div className='layout__logo-container'>
+          <NavLink to="/" className={navLinkClass}>
           <img src={logo_USM} height={50} width={250} alt="USM Logo" className='layout__logo' />
+          </NavLink>
         </div>
         <nav className='layout__nav'>
-          <NavLink to="/" className={navLinkClass}>
-            Página Principal
-          </NavLink>
           <NavLink to="/calendario" className={navLinkClass}>
             Calendario
           </NavLink>
