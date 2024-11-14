@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Calificaciones = () => {
+const Calificaciones = ({param}) => {
+  
   return (
     <div className="calificaciones-page">
       <h1>Calificaciones</h1>

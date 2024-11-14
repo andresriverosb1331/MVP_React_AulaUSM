@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const SubHeader = ({param}) => {
-  console.log(param)
+  console.log("subheader: " + param)
   return (
     <div className="sub-header">
       <nav className="sub-header__nav">

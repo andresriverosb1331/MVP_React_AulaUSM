@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom'
 export const PartcipantPage = () => {
 
   const { param } = useParams()
+  console.log("partpage:"+param)
   
   let participantes
 
@@ -100,7 +101,7 @@ export const PartcipantPage = () => {
     <>
 
       <div>
-        <SubHeader/>
+        <SubHeader param={param}/>
       </div>
       <div>
         <Participantes
