@@ -5,7 +5,7 @@ import '../stylesheets/componentes_utiles/miga_de_pan.scss';
 const Miga_de_pan = () => {
   const location = useLocation();
 
-  // Split the pathname to create miga_de_pan links
+ 
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (
@@ -32,7 +32,7 @@ const Miga_de_pan = () => {
   );
 };
 
-// Helper function to capitalize the first letter of each word
+
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 export default Miga_de_pan;

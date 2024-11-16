@@ -2,10 +2,10 @@ import React from 'react';
 import '../stylesheets/Noticia/Noticia_card.scss';
 
 const Noticia_card = () => {
-  // Sample news data (replace with your own data or fetch from an API)
+  
   const newsItems = [
     {
-      image: 'https://via.placeholder.com/300x150', // Replace with actual image URL
+      image: 'https://via.placeholder.com/300x150', 
       title: 'Orquesta Sinfónica Nacional de Chile presenta concierto “Música de películas”',
       description: 'El elenco presentará obras que pertenecen a la banda sonora de películas y series como Star Wars, Harry Potter, Superman, Jurassic Park y Game.',
       category: 'Arte y Cultura',
@@ -14,7 +14,7 @@ const Noticia_card = () => {
       ref: 'https://usm.cl/noticias/orquesta-sinfonica-nacional-de-chile-presenta-concierto-musica-de-peliculas-en-la-usm/'
     },
     {
-      image: 'https://via.placeholder.com/300x150', // Replace with actual image URL
+      image: 'https://via.placeholder.com/300x150', 
       title: 'Investigadores del AC3E se ubican entre los más citados del mundo',
       description: 'El ranking que posiciona a los integrantes del centro perteneciente a la USM en la elite académica mundial fue elaborado por la Universidad de...',
       category: 'Investigación',
@@ -23,7 +23,7 @@ const Noticia_card = () => {
       ref:'https://usm.cl/noticias/once-investigadores-del-ac3e-se-ubican-entre-el-2-de-los-cientificos-mas-citados-del-mundo/'
     },
     {
-      image: 'https://via.placeholder.com/300x150', // Replace with actual image URL
+      image: 'https://via.placeholder.com/300x150', 
       title: 'En tres regiones y de forma simultánea se realizará nueva versión de la tradicional Feria de Software de la USM',
       description: 'Campus San Joaquín y las Sedes Viña del Mar y Concepción de la casa de estudios serán los escenarios de esta muestra que reunirá...',
       category: 'Feria Software',
