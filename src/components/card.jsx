@@ -80,7 +80,7 @@ const coursesData = {
   {
     id:7,
     subject: 'Informática',
-    courseName: 'Diseño de interfaces usuarias',
+    courseName: 'Algoritmos y complejidad',
     parallel: '200/201/202',
     code: 'INF322',
     assignments: [
@@ -92,7 +92,7 @@ const coursesData = {
   {
     id:8,
     subject: 'Informática',
-    courseName: 'Diseño de interfaces usuarias',
+    courseName: 'Estadística computacional',
     parallel: '200/201/202',
     code: 'INF322',
     assignments: [
@@ -106,7 +106,7 @@ const coursesData = {
     {
       id:9,
       subject: 'Informática',
-      courseName: 'Lenguajes en programación en WWW',
+      courseName: 'Análisis y diseño de software',
       parallel: '200',
       code: 'INF301',
       assignments: [
@@ -118,7 +118,7 @@ const coursesData = {
     {
       id:10,
       subject: 'Informática',
-      courseName: 'Diseño de interfaces usuarias',
+      courseName: 'Sistemas operativos',
       parallel: '200/201/202',
       code: 'INF322',
       assignments: [
@@ -130,7 +130,7 @@ const coursesData = {
     {
       id:11,
       subject: 'Informática',
-      courseName: 'Diseño de interfaces usuarias',
+      courseName: 'Optimización',
       parallel: '200/201/202',
       code: 'INF322',
       assignments: [
@@ -142,7 +142,7 @@ const coursesData = {
     {
       id:12,
       subject: 'Informática',
-      courseName: 'Diseño de interfaces usuarias',
+      courseName: 'Inteligencia Artificial',
       parallel: '200/201/202',
       code: 'INF322',
       assignments: [

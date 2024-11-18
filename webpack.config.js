@@ -49,6 +49,7 @@ module.exports = (_, argv) => ({
   devServer: {
     port: 5050,
     hot: false,
+    allowedHosts: 'all',
     historyApiFallback: {
       index: '/'
     }
